@@ -91,7 +91,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
-vim.g.have_nerd_font = false
+vim.g.have_nerd_font = true
 
 -- [[ Setting options ]]
 -- See `:help vim.opt`
@@ -904,11 +904,11 @@ require('lazy').setup({
     main = 'nvim-treesitter.configs', -- Sets main module to use for opts
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
-      ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc', 
-      'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc', 'elixir', 'eex', 'heex',
-      'html', 'javascript', 'json', 'scss', 'typescript', 'yaml',
-      'python', 'rust', 'go', 'java', 'css', 'graphql', 'jsonc', 'tsx', 'vue',
-      'dockerfile','gitignore'},
+      ensure_installed = { 'bash', 'c', 'diff', 'html', 'lua', 'luadoc',
+        'markdown', 'markdown_inline', 'query', 'vim', 'vimdoc', 'elixir', 'eex', 'heex',
+        'html', 'javascript', 'json', 'scss', 'typescript', 'yaml',
+        'python', 'rust', 'go', 'java', 'css', 'graphql', 'jsonc', 'tsx', 'vue',
+        'dockerfile', 'gitignore' },
       -- Autoinstall languages that are not installed
       auto_install = true,
       highlight = {
